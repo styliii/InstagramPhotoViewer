@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/ivProfile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:scaleType="fitStart"
+        android:src="@drawable/abc_btn_radio_to_on_mtrl_015"
+        tools:ignore="ContentDescription"
+        android:layout_alignBottom="@+id/tvProfile"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="styliii"
+        android:id="@+id/tvProfile"
+        android:textStyle="bold"
+        android:textColor="#1E4770"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivProfile"
+        android:layout_toEndOf="@+id/ivProfile"
+        android:height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 hrs ago"
+        android:id="@+id/tvTimeAgo"
+        android:gravity="center_vertical"
+        android:height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvCaption"
+        android:layout_alignEnd="@+id/tvCaption"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPhoto"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_launcher"
+        android:minHeight="50dp"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/ivProfile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:id="@+id/ivLikes"
+        android:src="@drawable/instagram_heart"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11 Likes"
+        android:id="@+id/tvLikes"
+        android:height="32dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#1E4770"
+        android:layout_below="@+id/ivPhoto"
+        android:layout_toRightOf="@+id/ivLikes"
+        android:layout_toEndOf="@+id/ivLikes"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The fantastic Four.  Congrats to Oscar Winners"
+        android:id="@+id/tvCaption"
+        android:textSize="13sp"
+        android:ellipsize="end"
+        android:layout_below="@+id/ivLikes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm a comment"
+        android:id="@+id/tvComment"
+        android:layout_marginBottom="10dp"
+        android:textSize="13sp"
+        android:layout_alignLeft="@id/tvCaption"
+        android:layout_alignStart="@id/tvCaption"
+        android:layout_below="@+id/tvCaption"
+         />
+
+
+</RelativeLayout>
